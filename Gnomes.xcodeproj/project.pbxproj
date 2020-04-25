@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45255CE6245253D000990BE9 /* DetailGnome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45255CE5245253D000990BE9 /* DetailGnome.swift */; };
+		452576E2245240D000857D77 /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452576E1245240D000857D77 /* FinderViewController.swift */; };
+		45B338AD2450B0D700C0E203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338AC2450B0D700C0E203 /* AppDelegate.swift */; };
+		45B338AF2450B0D700C0E203 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338AE2450B0D700C0E203 /* SceneDelegate.swift */; };
+		45B338B12450B0D700C0E203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338B02450B0D700C0E203 /* ViewController.swift */; };
+		45B338B42450B0D700C0E203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B338B22450B0D700C0E203 /* Main.storyboard */; };
+		45B338B72450B0D700C0E203 /* Gnomes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45B338B52450B0D700C0E203 /* Gnomes.xcdatamodeld */; };
+		45B338B92450B0DD00C0E203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B338B82450B0DD00C0E203 /* Assets.xcassets */; };
+		45B338BC2450B0DD00C0E203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B338BA2450B0DD00C0E203 /* LaunchScreen.storyboard */; };
+		45B338C72450B0DD00C0E203 /* GnomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338C62450B0DD00C0E203 /* GnomesTests.swift */; };
+		45B338D22450B0DE00C0E203 /* GnomesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338D12450B0DE00C0E203 /* GnomesUITests.swift */; };
+		45B338E32450D0E100C0E203 /* GnomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338E22450D0E100C0E203 /* GnomeModel.swift */; };
+		45B338E52450F7AD00C0E203 /* GnomesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338E42450F7AD00C0E203 /* GnomesViewModel.swift */; };
+		45B338E72450F9E600C0E203 /* GnomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338E62450F9E600C0E203 /* GnomeServices.swift */; };
+		45B338EA2450FB2200C0E203 /* ConstantsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B338E92450FB2200C0E203 /* ConstantsAPI.swift */; };
+		45CF142A2453516A007F3E3B /* ProfessionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF14292453516A007F3E3B /* ProfessionsModel.swift */; };
+		45CF142E24535227007F3E3B /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF142D24535227007F3E3B /* FriendsModel.swift */; };
+		45CF143024535451007F3E3B /* GnomesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF142F24535451007F3E3B /* GnomesDetailViewModel.swift */; };
+		45CF143224535AB8007F3E3B /* loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CF143124535AB8007F3E3B /* loader.swift */; };
+		5C5A715F732E86E88FFD4077 /* Pods_Gnomes_GnomesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE99B3F9966A0097A50FB46F /* Pods_Gnomes_GnomesUITests.framework */; };
+		615098AB6542C5ACD619898A /* Pods_GnomesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCC36F9ED2ED1F13086B3EC /* Pods_GnomesTests.framework */; };
+		E32087513311BEAAECF4B096 /* Pods_Gnomes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1232CEE6261FE65CB18CBDE8 /* Pods_Gnomes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45B338C32450B0DD00C0E203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45B338A12450B0D700C0E203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B338A82450B0D700C0E203;
+			remoteInfo = Gnomes;
+		};
+		45B338CE2450B0DE00C0E203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45B338A12450B0D700C0E203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B338A82450B0D700C0E203;
+			remoteInfo = Gnomes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1232CEE6261FE65CB18CBDE8 /* Pods_Gnomes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gnomes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D99C2EE917F03B41ACE815 /* Pods-GnomesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnomesTests.debug.xcconfig"; path = "Target Support Files/Pods-GnomesTests/Pods-GnomesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BCC36F9ED2ED1F13086B3EC /* Pods_GnomesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GnomesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45255CE5245253D000990BE9 /* DetailGnome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGnome.swift; sourceTree = "<group>"; };
+		452576E1245240D000857D77 /* FinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
+		45B338A92450B0D700C0E203 /* Gnomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B338AC2450B0D700C0E203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45B338AE2450B0D700C0E203 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		45B338B02450B0D700C0E203 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45B338B32450B0D700C0E203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45B338B62450B0D700C0E203 /* Gnomes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gnomes.xcdatamodel; sourceTree = "<group>"; };
+		45B338B82450B0DD00C0E203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45B338BB2450B0DD00C0E203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45B338BD2450B0DD00C0E203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45B338C22450B0DD00C0E203 /* GnomesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnomesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B338C62450B0DD00C0E203 /* GnomesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesTests.swift; sourceTree = "<group>"; };
+		45B338C82450B0DD00C0E203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45B338CD2450B0DE00C0E203 /* GnomesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnomesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B338D12450B0DE00C0E203 /* GnomesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesUITests.swift; sourceTree = "<group>"; };
+		45B338D32450B0DE00C0E203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45B338E22450D0E100C0E203 /* GnomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeModel.swift; sourceTree = "<group>"; };
+		45B338E42450F7AD00C0E203 /* GnomesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesViewModel.swift; sourceTree = "<group>"; };
+		45B338E62450F9E600C0E203 /* GnomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeServices.swift; sourceTree = "<group>"; };
+		45B338E92450FB2200C0E203 /* ConstantsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsAPI.swift; sourceTree = "<group>"; };
+		45CF14292453516A007F3E3B /* ProfessionsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessionsModel.swift; sourceTree = "<group>"; };
+		45CF142D24535227007F3E3B /* FriendsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		45CF142F24535451007F3E3B /* GnomesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesDetailViewModel.swift; sourceTree = "<group>"; };
+		45CF143124535AB8007F3E3B /* loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loader.swift; sourceTree = "<group>"; };
+		7FB090B7602CFEC4098E87CC /* Pods-Gnomes-GnomesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gnomes-GnomesUITests.release.xcconfig"; path = "Target Support Files/Pods-Gnomes-GnomesUITests/Pods-Gnomes-GnomesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		80457E09BAC4B637ADBADABB /* Pods-GnomesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnomesTests.release.xcconfig"; path = "Target Support Files/Pods-GnomesTests/Pods-GnomesTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B78B46A22134884B650ED34 /* Pods-Gnomes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gnomes.release.xcconfig"; path = "Target Support Files/Pods-Gnomes/Pods-Gnomes.release.xcconfig"; sourceTree = "<group>"; };
+		8D9677B14F50B6DA2CD8A7D8 /* Pods-Gnomes-GnomesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gnomes-GnomesUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gnomes-GnomesUITests/Pods-Gnomes-GnomesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCD77F30E572A095B5215806 /* Pods-Gnomes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gnomes.debug.xcconfig"; path = "Target Support Files/Pods-Gnomes/Pods-Gnomes.debug.xcconfig"; sourceTree = "<group>"; };
+		FE99B3F9966A0097A50FB46F /* Pods_Gnomes_GnomesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gnomes_GnomesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45B338A62450B0D700C0E203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E32087513311BEAAECF4B096 /* Pods_Gnomes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B338BF2450B0DD00C0E203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				615098AB6542C5ACD619898A /* Pods_GnomesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B338CA2450B0DE00C0E203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C5A715F732E86E88FFD4077 /* Pods_Gnomes_GnomesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		452576DE24523F2900857D77 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				452576E1245240D000857D77 /* FinderViewController.swift */,
+				45CF143124535AB8007F3E3B /* loader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		45B338A02450B0D700C0E203 = {
+			isa = PBXGroup;
+			children = (
+				45B338AB2450B0D700C0E203 /* Gnomes */,
+				45B338C52450B0DD00C0E203 /* GnomesTests */,
+				45B338D02450B0DE00C0E203 /* GnomesUITests */,
+				45B338AA2450B0D700C0E203 /* Products */,
+				D2C2D80922438F198DF0EBF8 /* Pods */,
+				CE31A1AD9CF206CD14DD6FC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45B338AA2450B0D700C0E203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45B338A92450B0D700C0E203 /* Gnomes.app */,
+				45B338C22450B0DD00C0E203 /* GnomesTests.xctest */,
+				45B338CD2450B0DE00C0E203 /* GnomesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45B338AB2450B0D700C0E203 /* Gnomes */ = {
+			isa = PBXGroup;
+			children = (
+				452576DE24523F2900857D77 /* Utils */,
+				45B338E82450FB0E00C0E203 /* Others */,
+				45B338E12450CD8F00C0E203 /* ViewModel */,
+				45B338E02450CD8600C0E203 /* Services */,
+				45B338DF2450CD7D00C0E203 /* Model */,
+				45B338AC2450B0D700C0E203 /* AppDelegate.swift */,
+				45B338AE2450B0D700C0E203 /* SceneDelegate.swift */,
+				45B338B02450B0D700C0E203 /* ViewController.swift */,
+				45255CE5245253D000990BE9 /* DetailGnome.swift */,
+				45B338B22450B0D700C0E203 /* Main.storyboard */,
+				45B338B82450B0DD00C0E203 /* Assets.xcassets */,
+				45B338BA2450B0DD00C0E203 /* LaunchScreen.storyboard */,
+				45B338BD2450B0DD00C0E203 /* Info.plist */,
+				45B338B52450B0D700C0E203 /* Gnomes.xcdatamodeld */,
+			);
+			path = Gnomes;
+			sourceTree = "<group>";
+		};
+		45B338C52450B0DD00C0E203 /* GnomesTests */ = {
+			isa = PBXGroup;
+			children = (
+				45B338C62450B0DD00C0E203 /* GnomesTests.swift */,
+				45B338C82450B0DD00C0E203 /* Info.plist */,
+			);
+			path = GnomesTests;
+			sourceTree = "<group>";
+		};
+		45B338D02450B0DE00C0E203 /* GnomesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				45B338D12450B0DE00C0E203 /* GnomesUITests.swift */,
+				45B338D32450B0DE00C0E203 /* Info.plist */,
+			);
+			path = GnomesUITests;
+			sourceTree = "<group>";
+		};
+		45B338DF2450CD7D00C0E203 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45CF142D24535227007F3E3B /* FriendsModel.swift */,
+				45CF14292453516A007F3E3B /* ProfessionsModel.swift */,
+				45B338E22450D0E100C0E203 /* GnomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45B338E02450CD8600C0E203 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				45B338E62450F9E600C0E203 /* GnomeServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		45B338E12450CD8F00C0E203 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45B338E42450F7AD00C0E203 /* GnomesViewModel.swift */,
+				45CF142F24535451007F3E3B /* GnomesDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45B338E82450FB0E00C0E203 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				45B338E92450FB2200C0E203 /* ConstantsAPI.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		CE31A1AD9CF206CD14DD6FC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1232CEE6261FE65CB18CBDE8 /* Pods_Gnomes.framework */,
+				FE99B3F9966A0097A50FB46F /* Pods_Gnomes_GnomesUITests.framework */,
+				3BCC36F9ED2ED1F13086B3EC /* Pods_GnomesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2C2D80922438F198DF0EBF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCD77F30E572A095B5215806 /* Pods-Gnomes.debug.xcconfig */,
+				8B78B46A22134884B650ED34 /* Pods-Gnomes.release.xcconfig */,
+				8D9677B14F50B6DA2CD8A7D8 /* Pods-Gnomes-GnomesUITests.debug.xcconfig */,
+				7FB090B7602CFEC4098E87CC /* Pods-Gnomes-GnomesUITests.release.xcconfig */,
+				15D99C2EE917F03B41ACE815 /* Pods-GnomesTests.debug.xcconfig */,
+				80457E09BAC4B637ADBADABB /* Pods-GnomesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45B338A82450B0D700C0E203 /* Gnomes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45B338D62450B0DE00C0E203 /* Build configuration list for PBXNativeTarget "Gnomes" */;
+			buildPhases = (
+				32897526D2C7CFB235311C66 /* [CP] Check Pods Manifest.lock */,
+				45B338A52450B0D700C0E203 /* Sources */,
+				45B338A62450B0D700C0E203 /* Frameworks */,
+				45B338A72450B0D700C0E203 /* Resources */,
+				27584556DB4F321B2031B359 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gnomes;
+			productName = Gnomes;
+			productReference = 45B338A92450B0D700C0E203 /* Gnomes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45B338C12450B0DD00C0E203 /* GnomesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45B338D92450B0DE00C0E203 /* Build configuration list for PBXNativeTarget "GnomesTests" */;
+			buildPhases = (
+				EC0ABA5C5C7623849C53E3D2 /* [CP] Check Pods Manifest.lock */,
+				45B338BE2450B0DD00C0E203 /* Sources */,
+				45B338BF2450B0DD00C0E203 /* Frameworks */,
+				45B338C02450B0DD00C0E203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45B338C42450B0DD00C0E203 /* PBXTargetDependency */,
+			);
+			name = GnomesTests;
+			productName = GnomesTests;
+			productReference = 45B338C22450B0DD00C0E203 /* GnomesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45B338CC2450B0DE00C0E203 /* GnomesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45B338DC2450B0DE00C0E203 /* Build configuration list for PBXNativeTarget "GnomesUITests" */;
+			buildPhases = (
+				4CB3C6F6D80362F8729D9125 /* [CP] Check Pods Manifest.lock */,
+				45B338C92450B0DE00C0E203 /* Sources */,
+				45B338CA2450B0DE00C0E203 /* Frameworks */,
+				45B338CB2450B0DE00C0E203 /* Resources */,
+				F2C44DDA5EF38F26DD22A54E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45B338CF2450B0DE00C0E203 /* PBXTargetDependency */,
+			);
+			name = GnomesUITests;
+			productName = GnomesUITests;
+			productReference = 45B338CD2450B0DE00C0E203 /* GnomesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45B338A12450B0D700C0E203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Arturo Flores Consuelo";
+				TargetAttributes = {
+					45B338A82450B0D700C0E203 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					45B338C12450B0DD00C0E203 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 45B338A82450B0D700C0E203;
+					};
+					45B338CC2450B0DE00C0E203 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 45B338A82450B0D700C0E203;
+					};
+				};
+			};
+			buildConfigurationList = 45B338A42450B0D700C0E203 /* Build configuration list for PBXProject "Gnomes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45B338A02450B0D700C0E203;
+			productRefGroup = 45B338AA2450B0D700C0E203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45B338A82450B0D700C0E203 /* Gnomes */,
+				45B338C12450B0DD00C0E203 /* GnomesTests */,
+				45B338CC2450B0DE00C0E203 /* GnomesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45B338A72450B0D700C0E203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B338BC2450B0DD00C0E203 /* LaunchScreen.storyboard in Resources */,
+				45B338B92450B0DD00C0E203 /* Assets.xcassets in Resources */,
+				45B338B42450B0D700C0E203 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B338C02450B0DD00C0E203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B338CB2450B0DE00C0E203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27584556DB4F321B2031B359 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gnomes/Pods-Gnomes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gnomes/Pods-Gnomes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gnomes/Pods-Gnomes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32897526D2C7CFB235311C66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gnomes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CB3C6F6D80362F8729D9125 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gnomes-GnomesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC0ABA5C5C7623849C53E3D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GnomesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2C44DDA5EF38F26DD22A54E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gnomes-GnomesUITests/Pods-Gnomes-GnomesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gnomes-GnomesUITests/Pods-Gnomes-GnomesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gnomes-GnomesUITests/Pods-Gnomes-GnomesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45B338A52450B0D700C0E203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B338B72450B0D700C0E203 /* Gnomes.xcdatamodeld in Sources */,
+				452576E2245240D000857D77 /* FinderViewController.swift in Sources */,
+				45B338E52450F7AD00C0E203 /* GnomesViewModel.swift in Sources */,
+				45B338E72450F9E600C0E203 /* GnomeServices.swift in Sources */,
+				45CF143224535AB8007F3E3B /* loader.swift in Sources */,
+				45B338B12450B0D700C0E203 /* ViewController.swift in Sources */,
+				45B338EA2450FB2200C0E203 /* ConstantsAPI.swift in Sources */,
+				45B338AD2450B0D700C0E203 /* AppDelegate.swift in Sources */,
+				45CF142E24535227007F3E3B /* FriendsModel.swift in Sources */,
+				45255CE6245253D000990BE9 /* DetailGnome.swift in Sources */,
+				45CF143024535451007F3E3B /* GnomesDetailViewModel.swift in Sources */,
+				45B338AF2450B0D700C0E203 /* SceneDelegate.swift in Sources */,
+				45B338E32450D0E100C0E203 /* GnomeModel.swift in Sources */,
+				45CF142A2453516A007F3E3B /* ProfessionsModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B338BE2450B0DD00C0E203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B338C72450B0DD00C0E203 /* GnomesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B338C92450B0DE00C0E203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B338D22450B0DE00C0E203 /* GnomesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45B338C42450B0DD00C0E203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45B338A82450B0D700C0E203 /* Gnomes */;
+			targetProxy = 45B338C32450B0DD00C0E203 /* PBXContainerItemProxy */;
+		};
+		45B338CF2450B0DE00C0E203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45B338A82450B0D700C0E203 /* Gnomes */;
+			targetProxy = 45B338CE2450B0DE00C0E203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45B338B22450B0D700C0E203 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B338B32450B0D700C0E203 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45B338BA2450B0DD00C0E203 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45B338BB2450B0DD00C0E203 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45B338D42450B0DE00C0E203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45B338D52450B0DE00C0E203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45B338D72450B0DE00C0E203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD77F30E572A095B5215806 /* Pods-Gnomes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTG3J37C4H;
+				INFOPLIST_FILE = Gnomes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaC.Gnomes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		45B338D82450B0DE00C0E203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B78B46A22134884B650ED34 /* Pods-Gnomes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTG3J37C4H;
+				INFOPLIST_FILE = Gnomes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaC.Gnomes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		45B338DA2450B0DE00C0E203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D99C2EE917F03B41ACE815 /* Pods-GnomesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTG3J37C4H;
+				INFOPLIST_FILE = GnomesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaC.GnomesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gnomes.app/Gnomes";
+			};
+			name = Debug;
+		};
+		45B338DB2450B0DE00C0E203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80457E09BAC4B637ADBADABB /* Pods-GnomesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTG3J37C4H;
+				INFOPLIST_FILE = GnomesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaC.GnomesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gnomes.app/Gnomes";
+			};
+			name = Release;
+		};
+		45B338DD2450B0DE00C0E203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9677B14F50B6DA2CD8A7D8 /* Pods-Gnomes-GnomesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTG3J37C4H;
+				INFOPLIST_FILE = GnomesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaC.GnomesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gnomes;
+			};
+			name = Debug;
+		};
+		45B338DE2450B0DE00C0E203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB090B7602CFEC4098E87CC /* Pods-Gnomes-GnomesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTG3J37C4H;
+				INFOPLIST_FILE = GnomesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaC.GnomesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gnomes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45B338A42450B0D700C0E203 /* Build configuration list for PBXProject "Gnomes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B338D42450B0DE00C0E203 /* Debug */,
+				45B338D52450B0DE00C0E203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45B338D62450B0DE00C0E203 /* Build configuration list for PBXNativeTarget "Gnomes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B338D72450B0DE00C0E203 /* Debug */,
+				45B338D82450B0DE00C0E203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45B338D92450B0DE00C0E203 /* Build configuration list for PBXNativeTarget "GnomesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B338DA2450B0DE00C0E203 /* Debug */,
+				45B338DB2450B0DE00C0E203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45B338DC2450B0DE00C0E203 /* Build configuration list for PBXNativeTarget "GnomesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B338DD2450B0DE00C0E203 /* Debug */,
+				45B338DE2450B0DE00C0E203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45B338B52450B0D700C0E203 /* Gnomes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45B338B62450B0D700C0E203 /* Gnomes.xcdatamodel */,
+			);
+			currentVersion = 45B338B62450B0D700C0E203 /* Gnomes.xcdatamodel */;
+			path = Gnomes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45B338A12450B0D700C0E203 /* Project object */;
+}
